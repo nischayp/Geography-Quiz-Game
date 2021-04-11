@@ -3,7 +3,7 @@ print()
 print("RULES:")
 print("In this game, you will recieve a question.")
 print("All of the answers will be one word or a number")
-print("If you get something wrong, you are going to have to restart.")
+print("If you get something wrong, YOU'RE DONE")
 print("After you answer, press enter")
 print("Good Luck!")
 print()
@@ -21,8 +21,7 @@ if confo == str(2):
     least = input("What is the least populated state in the United States? ").lower()
 
     if least == "california":
-      print("Oof, that's the most populated state")
-      print("To restart, press the run button")
+      print("Oof, that's the most populated state, you're wrong")
     
     if least == "wyoming":
       print("Congrats! You're correct. Your next question is below.")
@@ -42,34 +41,53 @@ if confo == str(2):
           if cana == "ottawa":
             print("You're correct! The next question is below.")
 
-            za = input("What country is landlocked in South Africa? ")
+            za = input("What country is landlocked in South Africa? ").lower()
+
+            if za == "lesotho":
+              print("Yep, that's correct. Your next question is below")
+
+              zeal = input("What is the largest city on New Zealand's South Island? ")
+
+              if zeal == "christchurch":
+                print("Ding ding ding! Good job")
+                print("Your next question is below:")
+
+                pop = input("What is the most populated country in the world? ")
+              
+              if zeal == "auckland":
+                print("Ahh, that's the largest city on the North Island. Sorry")
+              
+              else:
+                print("You're wrong!")
+            
+            else:
+              print("Rip, you're done.")
           
           else:
             print("You're wrong. To restart, press the run button.")
         
         if brus == "spanish":
-          print("Good guess, but you're wrong. Press the run button to restart")
+          print("Good guess, but you're wrong.")
         
         else:
-          print("You're wrong!! Pres the run button to restart.")
+          print("You're wrong!! Press the run button to restart.")
       
       if spirit == "islam":
-        print("Well, this could be true in the future, but not yet. Run to restart")
+        print("Well, this could be true in the future, but not yet.")
 
       else:
-        print("You are wrong. Press the run button to restart the game")
+        print("You are wrong")
     
     else:
-      print("Welp, you're wrong. Press the run button to restart.")
+      print("Welp, you're wrong.")
   
   if ecua == "quito":
     print("Quito may be the capital, but not the largest city.")
-    print("To restart the game, press the run button")
   
   else:
-    print("Rip... you are wrong. To restart the game, press the run button")
+    print("Rip... you are wrong")
 
 
 else:
   print("Sorry, but you cannot move on to question one")
-  print("To retry, press the run button. Otherwise, learn some math.")
+  print("Go study some basic math.")
